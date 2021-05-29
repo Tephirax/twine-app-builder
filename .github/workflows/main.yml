@@ -43,7 +43,7 @@ jobs:
       - name: Check out Electron app template
         uses: actions/checkout@v2
         with:
-          repository: lazerwalker/electron-wrapper-template
+          repository: Tephirax/electron-wrapper-template
           path: app
 
       - name: Set up Electron app environment
