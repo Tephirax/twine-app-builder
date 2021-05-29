@@ -1,5 +1,5 @@
-$('body').on('click', '#messages-view a', (event) => {
-  event.preventDefault();
-  let link = event.target.href;
-  require("electron").shell.openExternal(link);
+const shell = require('electron').shell;
+$('.open-in-browser').click((event) => {
+		event.preventDefault();
+		shell.openExternal(event.target.href);
 });
